@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+}
+
+#color-boxes {
+    max-width: 800px;
+}
+
+#color-boxes button {
+    height: 150px;
+    background-color: white;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#background {
+    color: white;
+    background-color: #ffc107;
+}
+
+.menu-bar > .d-flex > div {
+    flex: 1;
+}
+
+#level {
+    display: flex;
+    justify-content: right;
+}
+
+#level .btn {
+    margin: 0 5px;
+}
+
+#score {
+    text-align: center;
+}
+
+@media (max-width: 565px) {
+    #color-boxes button {
+        height: 80px;
+    }
+    #new-colors, #level .btn, #score {
+        font-size: 12px;
+    }
+
+    #level .btn {
+        margin: 0 2px;
+    }
+}
