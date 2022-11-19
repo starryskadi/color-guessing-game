@@ -14,6 +14,7 @@ function rgb() {
 }
 
 function createColorBoxes() {
+    document.querySelector("#score").innerHTML = "";
     let data = "";
     const boxColors = []
     for (var i = 0; i < boxes; i++) {
@@ -29,7 +30,7 @@ function createColorBoxes() {
         each.addEventListener("click", function(ev) {
             const color = ev.target.value;
             document.querySelector("#background").style.backgroundColor = color;
-            console.log(correctColor, color)
+          
             if (correctColor === color) {
                 // Win
                 document.querySelector("#score").innerHTML = "YOU WIN!"
